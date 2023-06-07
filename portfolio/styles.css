@@ -1,0 +1,249 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    max-height: 100vh;
+    background-color: #1F252E;
+}
+
+/*nav */
+header {
+    padding: 1.7rem 1rem;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    max-width: 80%;
+    margin: auto;
+    align-items: center;
+    background-color: transparent;
+}
+
+.logo {
+    font-size: 1.3rem;
+    font-weight: 800;
+}
+
+.logo a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: .97rem;
+    font-weight: 600;
+    letter-spacing: .7px;
+    padding: 1rem;
+    padding: 0.4rem 1rem;
+}
+
+nav a.active,
+nav a:hover {
+    color: #00E8F8;
+    border-radius: 1rem;
+    transition: all.3s ease-in-out;
+}
+
+.menu i {
+    color: #00E8F8;
+}
+
+.menu {
+    display: none;
+}
+
+/* Nav */
+
+section {
+    margin: 2rem 8.5rem;
+    height: 70vh;
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5rem auto;
+}
+
+.main h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #fff;
+    /* animation: check 1s ease forwards;
+    animation-delay: .1s; */
+}
+
+.main p {
+    margin-top: 1rem;
+    font-size: .98rem;
+    color: #fff;
+}
+
+.social {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.4rem;
+    margin-top: 1.7rem;
+}
+
+.social a {
+    color: #00E8F8;
+    font-size: 1rem;
+    border: 1.6px solid #00E8F8;
+    border-radius: 50%;
+    padding: .35rem;
+    text-align: center;
+    width: 26px;
+}
+
+.social a:hover {
+    color: #1F252E;
+    background-color: #00E8F8;
+    box-shadow: 0 0 20px #00E8F8;
+    transition: all .3s ease-in-out;
+}
+
+.main h1 span:nth-child(1) {
+    font-size: 1.5rem;
+}
+
+.main h1 span:nth-child(2) {
+    color: #00E8F8;
+}
+
+.images {
+    background-color: #244D61;
+    width: 300px;
+    background-size: cover;
+    border-radius: 50%;
+    border: 10px solid white;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+
+@media only screen and (max-width:480px) {
+    .menu {
+        display: block;
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #244D61;
+    }
+
+    header {
+        padding: 0.7rem 1rem;
+        align-items: center;
+        max-width: 100%;
+    }
+
+    nav {
+        position: absolute;
+        display: grid;
+        top: 75px;
+        text-align: center;
+        background-color: #1F252E;
+        left: -100%;
+        z-index: 1;
+        width: 100%;
+    }
+
+    #click:checked~nav {
+        left: 0%;
+        transition: all 0.3s ease;
+    }
+
+    section {
+        margin: 1rem 1.5rem;
+    }
+
+}
+
+#about {
+    background-color: #8ce8ef;
+    height: 40vh;
+    color: black;
+    font-size: large;
+    font-weight: 900;
+    text-align: center;
+    padding: 10rem;
+}
+
+h1.about{
+    color: #1F252E;
+    text-decoration: underline;
+}
+
+.Skills{
+    display: inline;
+    text-align: center;
+}
+.skills-title{
+    text-align: center;
+    color: #00E8F8;
+    font-size: 250%;
+}
+
+.skills__container {
+    row-gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+.skills__subtitle {
+    color: var(--first-color);
+    margin-bottom: var(--mb-3);
+}
+
+.skills__name {
+    display: inline-block;
+    font-size: var(--small-font-size);
+    margin-right: var(--mb-2);
+    margin-bottom: var(--mb-3);
+    padding: .25rem .5rem;
+    background-color: var(--white-color);
+    border-radius: .25rem;
+}
+
+.skills__name:hover {
+    background-color: var(--first-color);
+    color: var(--white-color);
+}
+
+.skills__img img {
+    border-radius: .5rem;
+    width: 400px;
+}
+
+:root{
+    --mb-1: .5rem;
+    --mb-2: 1rem;
+    --mb-3: 1.5rem;
+    --mb-4: 2rem;
+}
+
+/*===== z index =====*/
+:root{
+    --z-fixed: 100;
+}
+
+/*===== Colores =====*/
+:root{
+    --first-color: #5361FF;
+    --white-color: #FAFAFF;
+    --dark-color: #2A3B47;
+    --text-color: #697477;
+}
+
+/*===== Fuente y tipografia =====*/
+:root{
+    --body-font: 'Montserrat', sans-serif;
+    --big-font-size: 6.25rem;
+    --h2-font-size: 1.25rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+}
